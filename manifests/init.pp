@@ -70,6 +70,7 @@ class dhcp (
     ensure   => installed,
     provider => $operatingsystem ? {
       default => undef,
+      solaris => pkgutil,
       darwin  => macports
     }
   }

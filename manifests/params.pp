@@ -30,6 +30,11 @@ class dhcp::params {
       $packagename = 'dhcp'
       $servicename = 'dhcpd'
     }
+    'solaris': {
+      $dhcp_dir = '/etc/opt/csw'
+      $packagename = 'CSWdhcp'
+      $servicename = 'cswdhcpd'
+    }
   }
 
 }
